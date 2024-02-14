@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;400;700&display=swap');
+
+
+body{
+	min-height: 100vh;
+	min-width: 100vw;
+	padding: 0;
+	margin: 0;
+	color: white;
+	font-family: 'Roboto Slab', serif!important;
+	background-image: url("media/b1.jpg");
+	background-size: cover;
+  	background-repeat: no-repeat;
+  	background-position: top;
+
+}
+
+img{
+	width:100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+.schedule-frame{
+	padding: 50px;
+	display: flex;
+	width: 800px;
+	height: 500px;
+	gap:20px;
+	background-color: rgba(255, 255, 255, 0.05);
+	border-radius: 30px;
+}
+
+p{
+	margin: 0;
+}
+
+#schedule-2{
+	display: none;
+}
+#schedule-3{
+	display: none;
+}
+#schedule-4{
+	display: none;
+}
+#schedule-5{
+	display: none;
+}
+
+
+h1{
+	margin: 0;
+	font-size: 6em;
+	font-weight: 700;
+}
+
+h2{
+	margin:0;
+	font-size: 2.1em;font-weight: 700;
+}
+
+h3{
+	margin: 0;
+	margin-top:15px;
+	margin-bottom:15px;
+	font-size: 1.3em;
+	font-weight: 400;
+}
+
+ /* Smartphones (portrait and landscape) */
+@media only screen and (max-width: 767px) {
+	h1{
+		font-size: 3.5em;
+	}
+
+	h2{
+		font-size: 1.8em;
+	}
+
+	h3{
+		margin-top:15px;
+		margin-bottom:15px;
+		font-size: 1em;
+	}
+
+	p{
+		font-size: 0.5em!important;
+	}
+
+/*	.schedule-frame{
+		padding: 50px;
+		display: flex;
+		width: 800px;
+		height: 500px;
+		gap:20px;
+		background-color: rgba(255, 255, 255, 0.05);
+		border-radius: 30px;
+	}*/
+
+	img{
+		display: none;
+	}
+	.schedule-frame{
+		padding: 20px;
+		width: 80vw;
+		background-color: rgba(255, 255, 255, 0.1);
+		height: auto;
+	}
+
+	.schedule-frame div:nth-child(1){
+		width: 100%!important;
+	}
+	.schedule-frame div:nth-child(2){
+		width: 0%!important;
+		display: none!important;
+	}
+}
+
+/* Tablets (portrait and landscape) */
+@media only screen and (min-width: 768px) and (max-width: 1120px) {
+	.schedule-frame{
+		padding: 40px;
+		display: flex;
+		width: 85vw;
+		height: 500px;
+		gap:20px;
+		
+	}
+}
+
+/* Laptops and Desktops */
+@media only screen and (min-width: 1120px) {
+
+}
